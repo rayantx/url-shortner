@@ -8,8 +8,6 @@ WORKDIR /build
 
 RUN go build -o main .
 
-#stage 2
-
 FROM alpine
 
 RUN adduser -S -D -H -h /app appuser
